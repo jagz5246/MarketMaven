@@ -763,6 +763,10 @@ footer{
         font-size: var(--titleFontsize);
         font-weight: var(--titleFontweight);
     }
+    .aboutBtn{
+        font-size: var(--primaryFontSize);
+        padding: 20px 34px;
+    }
     .office-flex{
         flex-direction: column;
         align-items: center;
