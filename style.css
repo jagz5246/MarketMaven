@@ -646,13 +646,25 @@ footer{
 }
 
 @media (max-width: 480px){
+    :root{
+        --primaryFontColor: #1a1a1a;
+        --secondaryFontColor: rgba(79, 79, 79, 0.81);
+        --primaryFontSize: 1.6em;
+        --titleFontsize: 3em;
+        --titleFontweight: 500;
+    }
     body{
         width: 100vh;
         margin: 0;
     }
+    #home .media-icons a{
+        font-size: 3em;
+    }
     #home .content.active{
         font-size: 14px;
-
+    }
+    .scroll-up i{
+        font-size: 5rem;
     }
     #extras{
         background-color: rgb(231, 240, 240);
@@ -684,8 +696,11 @@ footer{
         padding: 80px;
     }
     .img-desc{
-        width: 70%;
-        padding: 20px;
+        max-width: 500px;
+        padding: 40px;
+    }
+    .img-desc h2{
+        text-align: left;
     }
     .second-col{
         flex-direction: column-reverse;
@@ -694,7 +709,13 @@ footer{
         display: flex;
         flex-direction: column;  
         column-gap: 20px;
-        padding: 80px;
+        padding: 20px;
+    }
+    .services-title{
+        padding:0;
+    }
+    .services-desc{
+        font-size: var(--primaryFontSize);
     }
     .services-flex{
         display: flex;
@@ -702,17 +723,50 @@ footer{
         padding-bottom: 20px;
         width: 100%;
         align-items: center;
+        justify-content: center;
+    }
+    #about h2,.about-content{
+        padding: 0px 20px;
     }
     .services-flex ul{
         text-align: center;
+        font-size: 1.3em;
+        padding-bottom: 10px;
+    }
+    .services-flex .col-4 img{
+        margin-left: 50px;
+    }
+    .img-desc p{
+        font-size: var(--primaryFontSize);
+    }
+    .qualities-flexbox{
+        row-gap: 50px;
     }
     .quality{
-        width: 80%;
-        margin-bottom: 20px;
+        max-width: 500px;
+        padding: 80px 20px;
+        text-align: center;
+        background: white;
+        border-radius: 100px;
+    }
+    .quality h3{
+        font-size: 2em;
     }
     .form-contact{
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+    #services h2,#about h2,.about-headers,.leaders,#contact h2{
+        font-size: var(--titleFontsize);
+        font-weight: var(--titleFontweight);
+    }
+    .office-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .office-flex .office-content{
+        justify-content: center;
+        text-align: left;
     }
 }
