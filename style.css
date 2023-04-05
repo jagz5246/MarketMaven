@@ -663,8 +663,10 @@ footer{
     #home .content.active{
         font-size: 14px;
     }
-    .scroll-up i{
+      .scroll-up i{
         font-size: 5rem;
+        margin-bottom: 20px;
+        margin-right: 40px;
     }
     #extras{
         background-color: rgb(231, 240, 240);
