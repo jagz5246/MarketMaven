@@ -345,7 +345,7 @@ section{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('./Images/f4.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f4.jpg') no-repeat;
     background-position: center;
     background-size: cover; 
     text-align: center;
@@ -358,19 +358,19 @@ section{
 }
 .founder:nth-child(2){
     transition-delay: 100ms;
-    background: url('./Images/f1.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f1.jpg') no-repeat;
     background-position: center;
     background-size: cover;   
 }
 .founder:nth-child(3){
     transition-delay: 200ms;
-    background: url('./Images/f2.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f2.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
 .founder:nth-child(4){
     transition-delay: 300ms;
-    background: url('./Images/f3.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f3.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -607,7 +607,7 @@ footer{
         position: fixed;
         top: 10px;
         right: 20px;
-        background: url('./Images/menu.png');
+        background: url('./Marketing Maven/Images/menu.png');
         background-repeat: no-repeat;
         background-position: center;
         width: 50px;
@@ -617,7 +617,7 @@ footer{
     }
     .menu-btn.active{
         z-index: 999;
-        background: url('./Images/close.png');
+        background: url('./Marketing Maven/Images/close.png');
         transition: .3s ease;
 
     }
