@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector(".navigation");
 const btns = document.querySelectorAll(".nav-btn");
+const menuBtns = document.querySelectorAll(".menu-btns");
 const slides = document.querySelectorAll(".video-slide");
 const contents = document.querySelectorAll(".content");
 const scrollBtn = document.querySelector(".scroll-up");
@@ -28,6 +29,13 @@ menuBtn.addEventListener("click",()=>{
     nav.classList.toggle("active");
 })
 
+menuBtns.forEach((menu)=>{
+    menu.addEventListener("click",()=>{
+        menuBtn.classList.toggle("active");
+        nav.classList.toggle("active");
+    })
+})
+
 var sliderNav = function(id){
     btns.forEach((btn)=>{
         btn.classList.remove("active");
@@ -51,7 +59,7 @@ var sliderNav = function(id){
         })
     
     
-    console.log(slides.length)
+
     let slideIndex=0
     setInterval(() => {
         if(slideIndex<slides.length){
@@ -67,7 +75,6 @@ var sliderNav = function(id){
 
     const observer = new IntersectionObserver((entries)=>{
         entries.forEach((entry)=>{
-            // console.log(entry);
             if(entry.isIntersecting){
                 entry.target.classList.add('show');
             }
