@@ -575,7 +575,7 @@ footer{
         margin-right: 10px;
     }
     .
-    -btn{
+    .menu-btn{
         position: fixed;
         top: 10px;
         right: 20px;
@@ -633,7 +633,7 @@ footer{
     #home .content{
         flex-direction: column-reverse;
         row-gap: 50px;
-        padding: 200px 0px;
+        padding: 180px 0px;
     }
     #home .content img{
         width: 800px;
