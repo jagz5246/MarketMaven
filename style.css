@@ -15,26 +15,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-/* .custom-shape-divider-bottom-1680269552 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1680269552 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 105px;
-}
-
-.custom-shape-divider-bottom-1680269552 .shape-fill {
-    fill: rgb(255, 255, 255);
-} */
 
 header{
     z-index: 999;
@@ -149,53 +129,6 @@ section{
     background-color: black;
     color: white;
     padding: 12px 24px;
-}
-/* #home video{
-    z-index: 000;
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.video-slide{
-    position: absolute;
-    width: 100%;
-    clip-path: circle(0% at 0 50%);
-    transition: 1s ease;
-}
-.video-slide.active{
-    clip-path: circle(150% at 0 50%);
-
-}
-
-.slider-navigation{
-    z-index: 888;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(80px);
-    margin-bottom: 12px;
-}
-.slider-navigation .nav-btn{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    box-shadow: 0 0 2px rgba(255,255,255, 0.5);
-    transition: 0.3s ease;
-}
-.slider-navigation .nav-btn:not(:last-child){
-    margin-right: 20px;
-}
-.slider-navigation .nav-btn:hover{
-    transform: scale(1.3);
-}
-.slider-navigation .nav-btn.active{
-    background: #000000e3;
 }
 .read-more{
     color: white;
@@ -342,7 +275,7 @@ section{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('./Images/f4.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f4.jpg') no-repeat;
     background-position: center;
     background-size: cover; 
     text-align: center;
@@ -355,7 +288,7 @@ section{
 }
 .founder:nth-child(2){
     transition-delay: 100ms;
-    background: url('./Images/f1.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f1.jpg') no-repeat;
     background-position: center;
     background-size: cover;   
 }
