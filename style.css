@@ -15,6 +15,26 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+/* .custom-shape-divider-bottom-1680269552 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680269552 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 105px;
+}
+
+.custom-shape-divider-bottom-1680269552 .shape-fill {
+    fill: rgb(255, 255, 255);
+} */
 
 header{
     z-index: 999;
@@ -122,13 +142,27 @@ section{
 .banner-text input{
     margin: 0 5px 10px 0px;
     padding: 12px 24px;
+    border: 1px solid black;
+    transition: .3s ease-out;
+}
+.banner-text input:hover{
+    border: 1px solid gray;
+    transform: scale(1.1);
 }
 .banner-text button{
+    cursor: pointer;
     margin-left: 2px;
-    border: none;
+    border: 1px solid black;
     background-color: black;
     color: white;
     padding: 12px 24px;
+    transition: .3s ease-out;
+}
+.banner-text button:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    transform: scale(1.1);
 }
 .read-more{
     color: white;
@@ -294,13 +328,13 @@ section{
 }
 .founder:nth-child(3){
     transition-delay: 200ms;
-    background: url('./Images/f2.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f2.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
 .founder:nth-child(4){
     transition-delay: 300ms;
-    background: url('./Images/f3.jpg') no-repeat;
+    background: url('./Marketing Maven/Images/f3.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -540,11 +574,12 @@ footer{
         right: 0;
         margin-right: 10px;
     }
-    .menu-btn{
+    .
+    -btn{
         position: fixed;
         top: 10px;
         right: 20px;
-        background: url('./Images/menu.png');
+        background: url('./Marketing Maven/Images/menu.png');
         background-repeat: no-repeat;
         background-position: center;
         width: 50px;
@@ -554,7 +589,7 @@ footer{
     }
     .menu-btn.active{
         z-index: 999;
-        background: url('./Images/close.png');
+        background: url('./Marketing Maven/Images/close.png');
         transition: .3s ease;
 
     }
@@ -594,17 +629,43 @@ footer{
         width: 100vh;
         margin: 0;
     }
+    
     #home .content{
         flex-direction: column-reverse;
         row-gap: 50px;
+        padding: 200px 0px;
+    }
+    #home .content img{
+        width: 800px;
+        height: 800px;
+        padding-bottom: 10px;
+    }
+    #home h1{
+        font-size: 4em;
+        margin-bottom: 10px;
     }
     .banner-text{
-        width: 50%;
+        width: 100%;
         text-align: center;
-        margin: auto;
+        margin-bottom: 10px;
     }
-    .banner-text h1{
-        font-size: 3em;
+    .banner-text p{
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+    #home .content input {
+        width: 400px;
+        padding: 24px 36px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    #home .content button{
+        padding: 24px 36px;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    #home .media-icons{
+        top: 30%;
     }
     #home .media-icons a{
         font-size: 2.6em;
@@ -615,7 +676,7 @@ footer{
     .scroll-up i{
         font-size: 5rem;
         margin-bottom: 20px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
     #extras{
         background-color: rgb(231, 240, 240);
