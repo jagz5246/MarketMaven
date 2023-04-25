@@ -36,41 +36,6 @@ menuBtns.forEach((menu)=>{
     })
 })
 
-var sliderNav = function(id){
-    btns.forEach((btn)=>{
-        btn.classList.remove("active");
-    })
-    slides.forEach((slide)=>{
-        slide.classList.remove("active");
-    })
-    contents.forEach((content)=>{
-        content.classList.remove("active")
-    })
-
-    btns[id].classList.add("active");
-    slides[id].classList.add("active");
-    contents[id].classList.add("active");
-    }
-
-    btns.forEach((btn,id)=>{
-        btn.addEventListener("click",()=>{
-            sliderNav(id)
-        })
-        })
-    
-    
-
-    let slideIndex=0
-    setInterval(() => {
-        if(slideIndex<slides.length){
-        sliderNav(slideIndex);
-        slideIndex++
-        }
-        else{
-            slideIndex=0
-        }
-        
-    }, 8000);
 
 
     const observer = new IntersectionObserver((entries)=>{
